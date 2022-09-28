@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router';
+// import { API } from '../api';
 
 const Logout = () => {
 

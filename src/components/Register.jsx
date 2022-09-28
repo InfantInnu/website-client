@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router';
+// import { API } from '../api';
 
 const Register = () => {
 

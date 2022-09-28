@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useHistory } from "react-router";
+// import { API } from "../api";
 
 const Login = () => {
 
@@ -20,7 +21,7 @@ const Login = () => {
   }
 
   // Handle Login
-  const handleSubmit = async (event) =>{
+  const handleSubmit = async (event) =>{   
     event.preventDefault();
     const {email, password} = user;
     try {
@@ -40,8 +41,7 @@ const Login = () => {
         window.alert("Login Successfull");
         window.location.reload();
         history.push('/')
-        // Token is generated When we Logged In.
-        // Now we need to create Schema for Messages
+       
       }
 
     } catch (error) {
